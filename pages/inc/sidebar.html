@@ -1,0 +1,37 @@
+  <aside class="main-sidebar">
+
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+
+      <!-- Sidebar Menu -->
+      <ul class="sidebar-menu">
+        <!--li class="header">Apps</li-->
+	<?php
+	$fic = dirname(__FILE__)."/../todo.txt";
+	if(file_get_contents($fic)){
+        	echo "<li style='margin-bottom:7px'><a href='index.php'><i class='fa fa-home'></i><small class='label pull-left bg-green'><i class='fa fa-fw fa-pencil'></i></small> <span>Home</span></a></li>";
+	}
+	else{
+        	echo "<li><a href='index.php'><i class='fa fa-home'></i> <span>Home</span></a></li>";
+	}
+	?>
+        <li><a href="siteexterne.php"><i class="fa fa-external-link"></i> <span>Site pro'</span></a></li>
+        <li><a href="editeur.php"><i class="fa fa-edit"></i> <span>Editeur</span></a></li>
+		<li><a href="tryit.php"><i class="fa fa-desktop"></i> <span>Tryit html</span></a></li>
+        <li><a href="webmin.php"><i class="fa fa-server"></i> <span>Webmin</span></a></li>
+        <li><a href="monitor.php"><i class="fa fa-database"></i> <span>Monitor<span></a></li>
+	    <li><a href="wordpress.php"><i class="fa fa-wordpress"></i> <span>WP Test<span></a></li>
+		<li><a href="elastic.php"><i class="fa fa-search"></i> <span>Search<span></a></li>
+		<li><a href="wiki.php"><i class="fa fa-linux"></i> <span>wiki<span></a></li>
+		<li><a href="cloud9.php"><i class="fa fa-code"></i> <span>Editeur web<span></a></li>
+		<li><a href="owncloud.php"><i class="fa fa-cloud"></i> <span>Cloud<span></a></li>
+		<li><a href="shinken.php"><i class="fa fa-database"></i> <span>Supervision<span></a></li>
+		<li><a href="rancher.php"><i class="fa fa-server"></i> <span>Rancher<span></a></li>
+        <li><a href="widgets.php"><i class="fa fa-question"></i> <span>Divers / À propos</span></a></li>
+      </ul>
+      <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+
